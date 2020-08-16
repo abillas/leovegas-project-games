@@ -1,0 +1,18 @@
+@import "./src/components/styles";
+
+.App {
+  text-align: center;
+  position: relative;
+  min-height: calc(100vh - 100px);
+}
+
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+
+  .search {
+    max-width: 600px !important;
+    margin: 0px auto !important;
+  }
+}

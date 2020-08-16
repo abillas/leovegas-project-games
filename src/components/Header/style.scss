@@ -1,0 +1,20 @@
+.main-header {
+  height: 70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(90deg, #fd5c3c, #fd8e3c);
+  color: #333333;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.31);
+  margin-bottom: 4rem;
+  padding: 0 15px;
+}
+
+.logo {
+  max-width: 240px;
+  padding: 0;
+}
+
+.image {
+  width: 100%;
+}

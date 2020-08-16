@@ -1,0 +1,51 @@
+.card {
+  color: white;
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 200%;
+    width: 200%;
+    background: #ffffff;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(-128%) translateY(25%) rotate(45deg);
+    opacity: 0.1;
+  }
+
+  &:hover {
+    .card-info {
+      opacity: 1;
+      transition-property: opacity;
+      transition-duration: 1s;
+      transition-delay: 0.2s;
+    }
+
+    &:after {
+      transform: translateX(-20%) translateY(-25%) rotate(45deg);
+    }
+  }
+
+  &-image {
+    max-width: 100%;
+    border-radius: 6px;
+  }
+
+  &-info {
+    background: #fd5c3c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 0 0 6px 6px;
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    margin-bottom: 4px;
+  }
+}
